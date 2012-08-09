@@ -8,7 +8,7 @@ describe "StaticPages" do
   	end
 
   	it "should have the right title" do
-		  page.should have_selector('title', :text => "Ruby on Rails Tutorial | Home")
+		  page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App")
  	  end
   end
 
@@ -20,7 +20,7 @@ describe "StaticPages" do
 
   	it "should have the right title" do
 		visit help_path
-		page.should have_selector('title', :text => "Ruby on Rails Tutorial | Help")
+		page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App | Help")
  	end
   end
 
@@ -32,7 +32,7 @@ describe "StaticPages" do
 
   	it "should have the right title" do
 		visit about_path
-		page.should have_selector('title', :text => "Ruby on Rails Tutorial | About")
+		page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App | About")
  	end
   end
 
@@ -44,7 +44,7 @@ describe "StaticPages" do
 
     it "should have the title 'Contact'" do
       visit contact_path
-      page.should have_selector('title', text: "Ruby on Rails Tutorial | Contact")
+      page.should have_selector('title', text: "Ruby on Rails Tutorial Sample App | Contact")
     end
   end
 end
